@@ -75,6 +75,7 @@ public class CustomListTest {
      * increase the list by adding  2 a new city
      * check if our current size is 2
      */
+    @Test
     public void countCityTest() {
         list = MockCityList();
         assertEquals(list.countCities(), 0);
