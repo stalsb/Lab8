@@ -52,10 +52,20 @@ public class CustomList extends ArrayAdapter<City> {
     /**
      * this adds a city object to the list
      *the second phase, you can add the city
-     * @param city
+     * @param city city to add
      */
     public void addCity(City city){
         cities.add(city);
+    }
+
+    /**
+     * this checks if a city object is in the list
+     *of cities
+     * @param city city to check
+     * @return true if the list has the city, otherwise false
+     */
+    public Boolean hasCity(City city) {
+        return false;
     }
 
 
