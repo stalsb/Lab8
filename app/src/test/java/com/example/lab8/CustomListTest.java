@@ -70,4 +70,19 @@ public class CustomListTest {
         assertEquals(list.getCount(),listSize -1);
     }
 
+    /**
+     * check if our current size is 0
+     * increase the list by adding  2 a new city
+     * check if our current size is 2
+     */
+    public void countCityTest() {
+        list = MockCityList();
+        assertEquals(list.countCities(), 0);
+        City city = new City("Estevan", "SK");
+        City city2 = new City("St.Albert", "AB");
+        list.addCity(city);
+        list.addCity(city2);
+        assertEquals(list.countCities(), 2);
+    }
+
 }
