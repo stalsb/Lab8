@@ -44,12 +44,13 @@ public class CustomListTest {
      * increase the list by adding a new city
      * test list with city, should return true
      */
+    @Test
     public void hasCityTest() {
         list = MockCityList();
         City city = new City("Edmonton", "AB");
-        Assertions.assertFalse(list.hasCity(city));
+        assertFalse(list.hasCity(city));
         list.addCity(city);
-        Assertions.assertTrue(list.hasCity(city));
+        assertTrue(list.hasCity(city));
     }
 
 
